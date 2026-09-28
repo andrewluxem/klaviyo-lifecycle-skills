@@ -1,0 +1,48 @@
+name: Improve a skill
+description: Report a gap, error, or outdated guidance in an existing skill.
+title: "Improve <skill-name>: "
+labels: ["improvement"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: The folder name under `skills/`. For example, `welcome-series`.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - When to use this skill
+        - Inputs
+        - Program blueprint
+        - Klaviyo build mapping
+        - QA
+        - Measurement
+        - Worked example
+        - references/
+        - scripts/
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing
+      description: Quote the current text if it helps. Say what an agent would get wrong by following it.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested change
+      description: What good looks like instead, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Optional. Cite any number you propose. Uncited numbers get labeled illustrative.

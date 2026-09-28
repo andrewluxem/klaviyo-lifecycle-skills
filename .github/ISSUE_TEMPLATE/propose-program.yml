@@ -1,0 +1,49 @@
+name: Propose a program
+description: Suggest a new lifecycle program skill before anyone starts writing it.
+title: "Program proposal: "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the catalog in the README and ROADMAP.md first. If the program is already listed, comment on or improve that entry instead.
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      description: Lowercase and hyphenated, matching the folder name it would get. For example, `browse-abandonment`.
+    validations:
+      required: true
+  - type: textarea
+    id: program
+    attributes:
+      label: The program
+      description: What the program does, what triggers it, and the one outcome that says it worked.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Who it serves
+      description: The business types and customer segments this program is for.
+    validations:
+      required: true
+  - type: textarea
+    id: distinct
+    attributes:
+      label: How it differs from existing skills
+      description: Name the closest skill in the catalog and explain why this program needs its own skill instead of a section in that one.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Optional. Any published benchmarks or references you would draw on. Numbers without a verifiable source get labeled illustrative.
+  - type: checkboxes
+    id: readonly
+    attributes:
+      label: Read-only
+      options:
+        - label: This skill would guide analysis, builds, audits, or QA only. It would never send email or SMS.
+          required: true

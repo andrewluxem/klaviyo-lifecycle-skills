@@ -2,6 +2,12 @@
 
 All notable changes to this project are recorded here. Dates are YYYY-MM-DD.
 
+## [Unreleased]
+
+### Added
+
+- Issue forms for proposing a program and improving a skill, plus a pull request template with the house-style checklist.
+
 ## [0.1.0] - 2026-09-28
 
 ### Added
