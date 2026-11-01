@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="klaviyo-lifecycle-skills: Agent skills that encode how a senior lifecycle marketer designs Klaviyo programs: strategy, flow architecture, timing, splits, QA, and measurement. Works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI." width="100%"></p>
+
 # klaviyo-lifecycle-skills
 
 Agent skills for designing, auditing, and QA-ing Klaviyo lifecycle programs. Works with any agent that reads the SKILL.md format: Claude Code, Codex, Cursor, GitHub Copilot, and Gemini CLI.
