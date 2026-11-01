@@ -1,10 +1,12 @@
 # klaviyo-lifecycle-skills
 
-Agent skills for designing, auditing, and QA-ing Klaviyo lifecycle programs. Works with any agent that reads the SKILL.md format: Claude Code, Codex, Cursor, GitHub Copilot, and Gemini CLI.
+Planned agent skills for designing, auditing, and QA-ing Klaviyo lifecycle programs, in the SKILL.md format that Claude Code, Codex, Cursor, GitHub Copilot, and Gemini CLI read.
+
+**Status: early.** The repo has an annotated authoring template and nine stub skill folders. No skill has program content yet; each stub holds its frontmatter and TODO markers.
 
 ## The idea
 
-Most Klaviyo skills teach an agent how to click around Klaviyo. These teach it what good looks like. Each skill is a complete retention or lifecycle program, written the way a senior lifecycle marketer would design it: the strategy, the flow architecture, timing and splits, content blocks, pre-send QA, and measurement. The agent brings the tool access. The skill brings the judgment. The result is skill-driven workflows that produce programs worth shipping, not just flows that technically run.
+Most Klaviyo skills teach an agent how to click around Klaviyo. These are meant to teach it what good looks like. Each skill is planned as one retention or lifecycle program, designed the way a senior lifecycle marketer would: the strategy, the flow architecture, timing and splits, content blocks, pre-send QA, and measurement. The agent brings the tool access. The skill brings the judgment.
 
 ## Install
 
@@ -14,43 +16,45 @@ cd klaviyo-lifecycle-skills
 cp -r skills/<skill> ~/.claude/skills/
 ```
 
-Replace `<skill>` with a folder name from the catalog below, for example `skills/welcome-series`. For other agents, copy the skill folder into the location your agent reads skills from.
+Replace `<skill>` with a folder name from the catalog below, for example `skills/welcome-series`. For other agents, copy the skill folder into the location your agent reads skills from. Today every folder is a stub, so an installed skill gives the agent section headings and TODO markers, not a program.
 
 ## Skills catalog
 
-Every skill below is a stub today. See [ROADMAP.md](ROADMAP.md) for build order.
+Fifteen skills are planned. Nine have a stub folder in `skills/` today; the six Wave 2 skills have no folder yet. None has program content. See [ROADMAP.md](ROADMAP.md) for build order.
 
 ### Wave 1: core programs
 
 | Skill | What it covers | Status |
 |---|---|---|
-| `welcome-series` | Subscriber-to-first-purchase onboarding: message architecture, timing, splits, QA, measurement | Planned |
-| `abandonment-recovery` | Browse, cart, and checkout recovery across email and SMS | Planned |
-| `post-purchase` | Thank you, cross-sell, review capture, replenishment handoff | Planned |
-| `winback-reactivation` | Lapsed buyer and customer recovery: segmentation, offer strategy, timing | Planned |
-| `replenishment` | Consumable reorder timing: reorder modeling, timing, splits | Planned |
-| `sunset-suppression` | List hygiene: sunset flow design, suppression rules, deliverability guardrails | Planned |
+| `welcome-series` | Subscriber-to-first-purchase onboarding: message architecture, timing, splits, QA, measurement | Stub |
+| `abandonment-recovery` | Browse, cart, and checkout recovery across email and SMS | Stub |
+| `post-purchase` | Thank you, cross-sell, review capture, replenishment handoff | Stub |
+| `winback-reactivation` | Lapsed buyer and customer recovery: segmentation, offer strategy, timing | Stub |
+| `replenishment` | Consumable reorder timing: reorder modeling, timing, splits | Stub |
+| `sunset-suppression` | List hygiene: sunset flow design, suppression rules, deliverability guardrails | Stub |
 
 ### Wave 2: expansion programs
 
 | Skill | What it covers | Status |
 |---|---|---|
-| `vip-loyalty` | Recognition and retention for high-value customers | Planned |
-| `back-in-stock-price-drop` | Demand capture when inventory returns or prices fall | Planned |
-| `referral-advocacy` | Turning satisfied customers into referrers and reviewers | Planned |
-| `lead-nurture` | Moving non-buyers toward a first purchase over a longer cycle | Planned |
-| `sms-program` | A compliance-first SMS program: consent, quiet hours, STOP handling | Planned |
-| `seasonal-campaign-calendar` | Planning campaigns around the retail calendar without burning the list | Planned |
+| `vip-loyalty` | Recognition and retention for high-value customers | Planned, no folder yet |
+| `back-in-stock-price-drop` | Demand capture when inventory returns or prices fall | Planned, no folder yet |
+| `referral-advocacy` | Turning satisfied customers into referrers and reviewers | Planned, no folder yet |
+| `lead-nurture` | Moving non-buyers toward a first purchase over a longer cycle | Planned, no folder yet |
+| `sms-program` | A compliance-first SMS program: consent, quiet hours, STOP handling | Planned, no folder yet |
+| `seasonal-campaign-calendar` | Planning campaigns around the retail calendar without burning the list | Planned, no folder yet |
 
 ### Cross-cutting
 
 | Skill | What it covers | Status |
 |---|---|---|
-| `pre-send-qa` | Pre-send QA for any email or SMS program: broken links, missing fallbacks, audience errors, compliance gaps | Planned |
-| `brief-to-build` | Turns a creative or campaign brief into a shippable Klaviyo build spec | Planned |
-| `program-scorer` | Scores any Klaviyo flow against a rubric and returns prioritized fixes | Planned |
+| `pre-send-qa` | Pre-send QA for any email or SMS program: broken links, missing fallbacks, audience errors, compliance gaps | Stub |
+| `brief-to-build` | Turns a creative or campaign brief into a shippable Klaviyo build spec | Stub |
+| `program-scorer` | Scores any Klaviyo flow against a rubric and returns prioritized fixes | Stub |
 
 ## Skill anatomy
+
+Each skill will follow this layout once it is written:
 
 ```
 skills/<skill-name>/
